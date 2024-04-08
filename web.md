@@ -88,7 +88,7 @@ npm is useful because it allows developers to:
   • discover new packages and learn about their functionality through the npm registry
   • automate repetitive tasks with the command-line interface.
 
-#### What is the difference between the `depdendencies` & `devDependencies` in a `package.json` file ?
+#### What is the difference between the `dependencies` & `devDependencies` in a `package.json` file ?
 In a package.json file, the dependencies and devDependencies fields are used to specify the packages that your project depends on. The main difference between the two is when the dependencies are needed.
 
 dependencies: are packages that are required for your application to run in production. These are the packages that your application needs to function correctly when it is deployed to an environment outside of a development environment. Examples: frameworks: React, AngularJS, Vue.js and Express.
