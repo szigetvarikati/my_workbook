@@ -15,16 +15,17 @@ Static typing in TypeScript refers to the ability to explicitly declare variable
 
 #### 4. How do you declare variables with different types in TypeScript?
 You can declare variables with different types in TypeScript using type annotations or type inference.Example with type annotations:
-// Declaring a variable with a specific type
-let myNumber: number = 10;
-let myString: string = "Hello";
-let myBoolean: boolean = true;
-Example with type inference:
+- Declaring a variable with a specific type: <br>
+`let myNumber: number = 10;` <br>
+`let myString: string = "Hello";` <br>
+`let myBoolean: boolean = true;`
 
-// TypeScript infers the type based on the value assigned
-let myNumber = 10; // TypeScript infers myNumber to be of type number
-let myString = "Hello"; // TypeScript infers myString to be of type string
-let myBoolean = true; // TypeScript infers myBoolean to be of type boolean
+- Example with type inference: <br>
+`let myNumber = 10;`       -> TypeScript infers myNumber to be of type number <br>
+`let myString = "Hello";`  -> TypeScript infers myString to be of type string <br>
+`let myBoolean = true;`    -> TypeScript infers myBoolean to be of type boolean <br>
+
+TypeScript infers the type based on the value assigned
 
 (A TypeScriptben különböző típusú változókat típus-annotációk vagy típusinferencia segítségével lehet deklarálni.)
 
@@ -74,9 +75,27 @@ Type inference in TypeScript refers to the compiler's ability to automatically d
 (A típusinferencia a TypeScriptben a fordító képességét jelenti arra, hogy automatikusan meghatározza egy változó adattípusát annak inicializációs értéke alapján. Ez a funkció csökkenti a szükségességet a nyilvánvaló típus-annotációkra, és a kódot tömörebbé teszi.)
 
 #### 14. How do you compile TypeScript code into JavaScript?
-TypeScript code can be compiled into JavaScript using the TypeScript compiler (tsc). You can run the compiler from the command line or integrate it into build tools like webpack or gulp.
+TypeScript code can be compiled into JavaScript using the TypeScript compiler (tsc). You can run the compiler from the command line or integrate it into build tools like webpack or gulp. <br>
+When you issue the `tsc` command (or `tsc filename.ts` command to compile a specific file), the TypeScript compiler begins to interpret and compile the specified TypeScript source files into JavaScript code. The process consists of the following steps:
 
-(A TypeScript kódot JavaScriptté lehet fordítani a TypeScript fordítóval (tsc). A fordítót futtathatod parancssorban, vagy integrálhatod build eszközökbe, mint például a webpack vagy gulp.)
+- Parsing Files: The TypeScript compiler examines the provided source files and performs type checking to determine the types of variables, functions, classes, and other elements.
+- Type Checking: The compiler verifies all parts of the code for type safety. This includes checking the compliance of data types and detecting type errors.
+- Compilation: After successful type checking, the TypeScript source code is converted into JavaScript code. The conversion typically involves removing TypeScript-specific syntax elements, restructuring, and replacing them with JavaScript-specific language elements.
+- Generating Output Files: The compiler writes the JavaScript code into one or more JavaScript files based on the resulting JavaScript code. By default, the output files are created in the same location as the source code, but this can be configured using the --outDir switch.
+- Outputting Compilation Result: Finally, the compiler outputs the result of the process, including any errors or warnings encountered during compilation, to the console.
+
+When using the `tsc --watch` command, the compiler watches the source files and recompiles them immediately whenever there is a modification. This allows developers to continuously track code changes and see their impact on the compiled JavaScript code instantly.
+
+(A TypeScript kódot JavaScriptté lehet fordítani a TypeScript fordítóval (tsc). A fordítót futtathatod parancssorban, vagy integrálhatod build eszközökbe, mint például a webpack vagy gulp. <br>
+Amikor kiadod a `tsc` parancsot (vagy `tsc filename.ts` parancsot egy konkrét fájl fordításához), a TypeScript fordító elkezdi értelmezni és fordítani a megadott TypeScript forrásfájlokat JavaScript kóddá. A folyamat a következő lépésekből áll:
+
+- Fájl értelmezése: A TypeScript fordító megvizsgálja a megadott forrásfájlokat, és típusellenőrzést végez, hogy meghatározza a változók, függvények, osztályok és egyéb elemek típusait.
+- Típusellenőrzés: A fordító ellenőrzi a kód összes részét a típusbiztonság érdekében. Ez magában foglalja az adattípusok megfelelőségének ellenőrzését és a típushibák felderítését.
+- Fordítás: Miután sikeresen lefutott a típusellenőrzés, a TypeScript forráskód át lesz alakítva JavaScript kóddá. A kód konverziója általában a nyelvi szintaxis elemek eltávolítására, átstrukturálására és JavaScript-specifikus nyelvi elemekkel való helyettesítésére irányul.
+- Kimeneti fájlok létrehozása: A fordító a JavaScript kódot egy vagy több JavaScript fájlba írja, amelyeket az eredményként kapott JavaScript kód alapján létrehoz. Az alapértelmezett beállítások szerint a kimeneti fájlok ugyanazon a helyen lesznek létrehozva, mint a forráskód, de ez konfigurálható a --outDir kapcsolóval.
+- Fordítás eredményének kiírása: Végül a fordító a folyamat eredményét, beleértve a fordítás során fellépett hibákat vagy figyelmeztetéseket, kiírja a konzolra.
+  
+A `tsc --watch` parancs használata esetén a fordító figyeli a forrásfájlokat, és azonnal újrafordítja őket, amint módosítás történik bennük. Ez lehetővé teszi a fejlesztők számára, hogy folyamatosan nyomon kövessék a kódváltozásokat és azonnal lássák azok hatását a fordított JavaScript kódon.)
 
 #### 15. What are some of the advanced features introduced in recent versions of TypeScript?
 Recent versions of TypeScript have introduced several new and useful features that can assist developers in writing and maintaining code more effectively. These include:
