@@ -183,23 +183,24 @@ Cypress is known for its speed, as it operates directly within the browser and e
 (A Cypress gyorsaságáról ismert, mivel közvetlenül a böngészőben működik, és aszinkron módon futtatja a teszteket, gyors és megbízható tesztfuttatásokat eredményezve. Egyszerű és intuitív API-jának köszönhetően könnyű írni és karbantartani a teszteket, míg az automatikus várakozás és a valós idejű újratöltés funkciók gyors visszajelzést biztosítanak a tesztfejlesztés során. Azonban a Cypress csak webalkalmazások tesztelésére korlátozódik, és elsősorban a Chrome-ot támogatja, korlátozott böngészők közti tesztelési képességekkel.A Selenium viszont sokoldalúbb tesztelési keretrendszer, amely több programozási nyelvet és böngészőt támogat. Ez lehetővé teszi a többplatformos tesztelést, a mobilalkalmazások tesztelését és a felhasználói felületek integrált tesztelését. Bár a Selenium erősebb a böngészők közti tesztelés terén, az aszinkron műveletek kezelése és a várakozási mechanizmusok kezelése nehezebb lehet a fejlesztők számára. Emellett a Selenium tesztek lassabbak lehetnek a Cypress tesztekhez képest, mivel a WebDriver távoli vezérlést használ, és a tesztek instabilabbak lehetnek a különböző böngészők és környezetek közötti összehasonlítás miatt.)
 
 #### 27. What are the bacis commands in Cypress?
-cy.visit(): This command loads a URL in the browser to start the test on a specific website.
-cy.get(): Helps select elements in the DOM based on unique identifiers, classes, or other selectors.
-cy.contains(): Selects elements based on whether they contain a specific text.
-cy.click(): Simulates a click on a specific element in the browser.
-cy.type(): Simulates keyboard input into a specific input field or text box.
-cy.url(): Returns the currently loaded URL in the browser.
-cy.wait(): Aids in waiting for a specific event or condition to occur during the test process.
-cy.should(): Allows you to assert various conditions, such as whether a specific element is visible or contains the expected text.
-cy.intercept(): Enables you to intercept and manipulate network requests during tests.
+- cy.visit(): This command loads a URL in the browser to start the test on a specific website.
+- cy.get(): Helps select elements in the DOM based on unique identifiers, classes, or other selectors.
+- cy.contains(): Selects elements based on whether they contain a specific text.
+- cy.click(): Simulates a click on a specific element in the browser.
+- cy.type(): Simulates keyboard input into a specific input field or text box.
+- cy.url(): Returns the currently loaded URL in the browser.
+- cy.wait(): Aids in waiting for a specific event or condition to occur during the test process.
+- cy.should(): Allows you to assert various conditions, such as whether a specific element is visible or contains the expected text.
+- cy.intercept(): Enables you to intercept and manipulate network requests during tests.
 
-(cy.visit(): Ezzel a parancsalapú paranccsal betölthetsz egy URL-t a böngészőben, hogy elindítsd a tesztet az adott webhelyen.
-cy.get(): Ez a parancs segít az elemek kiválasztásában a DOM-ban, például az egyedi azonosítók, osztályok vagy egyéb szelektorok alapján.
-cy.contains(): Segít az elemek kiválasztásában az alapján, hogy tartalmazzák-e egy adott szövegrészt.
-cy.click(): Ez a parancs szimulálja a kattintást egy adott elemre a böngészőben.
-cy.type(): Használd ezt a parancsot a billentyűleütések szimulálásához egy adott inputmezőbe vagy szövegdobozba.
-cy.url(): Visszaadja a böngészőben jelenleg betöltött URL-t.
-cy.wait(): Segít várakozni egy adott eseményre vagy feltétel teljesülésére a tesztfolyamat során.
-cy.should(): A should parancs segítségével különböző feltételeket ellenőrizhetsz, például hogy egy adott elem látható-e, vagy megfelelő szöveget tartalmaz-e.
-cy.intercept(): Ezzel a paranccsal lehetőséged van a hálózati kérések elfogására és manipulálására a tesztek során.)
+(
+- cy.visit(): Ezzel a parancsalapú paranccsal betölthetsz egy URL-t a böngészőben, hogy elindítsd a tesztet az adott webhelyen.
+- cy.get(): Ez a parancs segít az elemek kiválasztásában a DOM-ban, például az egyedi azonosítók, osztályok vagy egyéb szelektorok alapján.
+- cy.contains(): Segít az elemek kiválasztásában az alapján, hogy tartalmazzák-e egy adott szövegrészt.
+- cy.click(): Ez a parancs szimulálja a kattintást egy adott elemre a böngészőben.
+- cy.type(): Használd ezt a parancsot a billentyűleütések szimulálásához egy adott inputmezőbe vagy szövegdobozba.
+- cy.url(): Visszaadja a böngészőben jelenleg betöltött URL-t.
+- cy.wait(): Segít várakozni egy adott eseményre vagy feltétel teljesülésére a tesztfolyamat során.
+- cy.should(): A should parancs segítségével különböző feltételeket ellenőrizhetsz, például hogy egy adott elem látható-e, vagy megfelelő szöveget tartalmaz-e.
+- cy.intercept(): Ezzel a paranccsal lehetőséged van a hálózati kérések elfogására és manipulálására a tesztek során.)
 
